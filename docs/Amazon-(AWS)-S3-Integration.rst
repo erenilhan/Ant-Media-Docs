@@ -57,7 +57,7 @@ Forward MP4 and Preview Request to S3 in your Streaming App
 This section is optional. If you want to forward http requests to MP4
 files and Preview files to S3 directly, you can use a HTTP filter. \*
 Clone the sample app from here
-https://gitlab.com/Ant-Media/SampleApp.git
+https://github.com/ant-media/SampleApp
 
 -  Open the ``HttpForwardFilter`` in
    ``io.antmedia.serverapp.pscp.filter`` package and uncomment the lines
@@ -77,17 +77,17 @@ https://gitlab.com/Ant-Media/SampleApp.git
                FilterChain chain) throws IOException, ServletException {
            String requestURI = ((HttpServletRequest)request).getRequestURI();
 
-           
+
            File f = new File("webapps/"+ requestURI);
-           if (!f.exists()) 
+           if (!f.exists())
            {
                String redirectUri = "WRITE YOUR BUCKET URL like https://s3.eu-central-1.amazonaws.com/" + requestURI;
                HttpServletResponse httpResponse = (HttpServletResponse) response;
                httpResponse.sendRedirect(redirectUri);
                return;
            }
-           
-           
+
+
            chain.doFilter(request, response);
        }
 
