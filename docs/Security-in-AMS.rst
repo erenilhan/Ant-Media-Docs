@@ -17,6 +17,8 @@ This guide explains how to control Security on Ant Media Server. Briefly, our se
 
 5- Hash Based Token in Streaming Sources
 
+6- Publisher IP Filter
+
 1- IP Filter in REST API
 --------------------------
 .. tip::
@@ -232,3 +234,18 @@ If related settings are enabled, Ant Media Server first generates hash values ba
 Then compare this generated hash value with clients hash value during authentication.
 
 Once the hash is successfully validated by Ant Media Server, client is granted either to publish or play according to application setting and user request.
+
+6- Publisher IP Filter
+--------------------------
+.. tip::
+	Publisher IP Filter feature is available for later versions of the 1.9.0+ version.
+
+Publisher IP filter feature allows you to specify the IP addresses allowed for publishing. You can define multiple allowed IPs in CIDR format as comma (,) seperated. 
+
+To enable publisher IP filtering you must set ``settings.allowedPublisherIps`` in ``AMS_DIR/webapps/<App_Name>/WEB_INF/red5.properties`` file with the allowed IP addresses.
+
+.. tip::
+	**Example:**
+	``settings.allowedPublisherIps=10.20.30.40/24,127.0.0.1/32`` allows IPs 10.20.30.[0-255] and 127.0.0.1.
+
+	You can read `more <https://whatismyipaddress.com/cidr/>`_. about CIDR notation. 
