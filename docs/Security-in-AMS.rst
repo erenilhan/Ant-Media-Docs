@@ -248,4 +248,4 @@ To enable publisher IP filtering you must set ``settings.allowedPublisherIps`` i
 	**Example:**
 	``settings.allowedPublisherIps=10.20.30.40/24,127.0.0.1/32`` allows IPs 10.20.30.[0-255] and 127.0.0.1.
 
-	You can read `more <https://whatismyipaddress.com/cidr/>`_. about CIDR notation. 
+	You can read `more <https://whatismyipaddress.com/cidr/>`_ about CIDR notation. 
