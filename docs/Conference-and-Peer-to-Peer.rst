@@ -12,9 +12,9 @@ At the end of this tutorial, you have basic WebRTC Conference Room. This tutoria
 .. tip::
 
 	Requeirements
-
+	
 	-Ant Media Server Enterprise Edition
-
+	
 	-SSL both of Website & Ant Media Server
 
 Firstly, you need Ant Media Server Enterprise Edition in this solution. Also, you need SSL in your Website & Ant Media Server. Because of Google Chrome Security rules. If you haven't got any domain for your Ant Media Server, you can get free domain in Freenom.
@@ -36,10 +36,11 @@ Include JavaScript files to your page in the header as follows.
 .. code-block:: java
 
 	<head> 
+	...
 	<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
 	<script src="https://github.com/ant-media/StreamApp/blob/master/src/main/webapp/js/webrtc_adaptor.js"></script> 
+	...
 	</head>
-
 
 Include Body some tags to your page in the body as follows.
 
@@ -74,6 +75,7 @@ Include footer some codes to your page in the body as follows.
 
 .. code-block:: java
 
+	...
 	Define Media source variable, SDP variable and etc. 
 
 	Define websocketURL your URL.
@@ -82,6 +84,7 @@ Include footer some codes to your page in the body as follows.
 	var webRTCAdaptor = new WebRTCAdaptor(
 
 	}
+	...
 
 
 You can analyze and follow the `Conference Example <https://antmedia.io/livedemo/conference.html>`_ in the Live Demo also.
@@ -98,10 +101,10 @@ You need some requirements in build Peer to Peer Communication. Requirements in 
 .. tip::
 
 	Requeirements
-	-Ant Media Server Enterprise Edition
-	-SSL both of Website & Ant Media Server
 
-	...
+	-Ant Media Server Enterprise Edition
+
+	-SSL both of Website & Ant Media Server
 
 Firstly, you need Ant Media Server Enterprise Edition in this solution. Also, you need SSL in your Website & Ant Media Server. Because of Google Chrome Security rules. If you haven't got any domain for your Ant Media Server, you can get free domain in Freenom.
 
@@ -122,8 +125,10 @@ Include JavaScript files to your page in the header as follows.
 .. code-block:: java
 
 	<head> 
+	...
 	<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
 	<script src="https://github.com/ant-media/StreamApp/blob/master/src/main/webapp/js/webrtc_adaptor.js"></script> 
+	...
 	</head>
 
 Include Body some codes to your page in the body as follows.
