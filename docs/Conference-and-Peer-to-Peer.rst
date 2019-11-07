@@ -12,9 +12,10 @@ At the end of this tutorial, you have basic WebRTC Conference Room. This tutoria
 .. tip::
 
 	Requeirements
-	-Ant Media Server Enterprise Edition
-	-SSL both of Website & Ant Media Server
 
+	-Ant Media Server Enterprise Edition
+
+	-SSL both of Website & Ant Media Server
 
 Firstly, you need Ant Media Server Enterprise Edition in this solution. Also, you need SSL in your Website & Ant Media Server. Because of Google Chrome Security rules. If you haven't got any domain for your Ant Media Server, you can get free domain in Freenom.
 
@@ -39,7 +40,6 @@ Include JavaScript files to your page in the header as follows.
 	<script src="https://github.com/ant-media/StreamApp/blob/master/src/main/webapp/js/webrtc_adaptor.js"></script> 
 	</head>
 
-	...
 
 Include Body some tags to your page in the body as follows.
 
@@ -69,24 +69,20 @@ Include Body some tags to your page in the body as follows.
 	</div>
 	...
 
-	...
 
 Include footer some codes to your page in the body as follows.
 
-	.. code-block:: java
+.. code-block:: java
 
-	..
 	Define Media source variable, SDP variable and etc. 
-	
+
 	Define websocketURL your URL.
 	var websocketURL = "wss://domain-name.com:5443/WebRTCAppEE/websocket";
 
 	var webRTCAdaptor = new WebRTCAdaptor(
-	
-	}
-	..
 
-	...
+	}
+
 
 You can analyze and follow the `Conference Example <https://antmedia.io/livedemo/conference.html>`_ in the Live Demo also.
 
@@ -130,12 +126,11 @@ Include JavaScript files to your page in the header as follows.
 	<script src="https://github.com/ant-media/StreamApp/blob/master/src/main/webapp/js/webrtc_adaptor.js"></script> 
 	</head>
 
-	...
-
 Include Body some codes to your page in the body as follows.
 
 .. code-block:: java
 
+	...
 	<video id="localVideo" autoplay muted width="480"></video>
 	<video id="remoteVideo" autoplay controls width="480"></video>
 	<br /> <br />
@@ -152,14 +147,13 @@ Include Body some codes to your page in the body as follows.
 	<button onclick="muteLocalMic()" class="btn btn-default"  >Mute Local Mic</button>
 	<button onclick="unmuteLocalMic()" class="btn btn-default"  >Unmute Local Mic</button>	
 	</div>
-
 	...
 
 Include footer some codes to your page in the body as follows.
 
-	.. code-block:: java
+.. code-block:: java
 
-	..
+	...
 	Define Media Source variable, SDP variable and etc. 
 	
 	Define websocketURL your URL.
@@ -168,8 +162,6 @@ Include footer some codes to your page in the body as follows.
 	var webRTCAdaptor = new WebRTCAdaptor(
 	
 	}
-	..
-
 	...
 
 
