@@ -1,23 +1,22 @@
 General Steps How to Create Own WebRTC Conference Room and Peer to Peer
 ---------------------------
-This guide describes How to Create Own WebRTC Conference Room and Peer to Peer with Ant Media Server. This guide you can use WebRTC solutions in different communication formations. In addition to peer-to-peer (1-1)  and publish-play (1-N) communication types, you can also implement a WebRTC conference (N-N) solution with Ant Media Server Javascript SDK. Also, WebRTC latency is average 0.5 seconds. Let’s have a look at that step by step. 
+This guide describes How to Create Own WebRTC Conference Room and Peer to Peer with Ant Media Server. This guide you can use WebRTC solutions in different communication formations. In addition to peer-to-peer (1-1)  and publish-play (1-N) communication types, you can also implement a WebRTC conference (N-N) solution with Ant Media Server Javascript SDK. Let’s have a look at that step by step. 
 
 How to Create Own WebRTC Conference Room
 --------------------------------
 
-At the end of this tutorial, you have basic WebRTC Conference Room. This tutorial scope is basics in WebRTC Conference Room. For the detailed technical information follow this `link <https://antmedia.io/how-to-create-a-webrtc-conference-room/>`_.
+At the end of this tutorial, you will learn how to create basic WebRTC Conference Room. This tutorial scope is basics in WebRTC Conference Room. For the detailed technical information follow this `link <https://antmedia.io/how-to-create-a-webrtc-conference-room/>`_.
 
- You need some requirements in build Conference Room. Requirements in listed in below.
+You need some requirements in build Conference Room. Requirements in listed in below.
 
 .. tip::
+	Requeirements:
 
-	Requeirements
-	
-	-Ant Media Server Enterprise Edition
-	
-	-SSL both of Website & Ant Media Server
+	Ant Media Server Enterprise Edition
 
-Firstly, you need Ant Media Server Enterprise Edition in this solution. Also, you need SSL in your Website & Ant Media Server. Because of Google Chrome Security rules. If you haven't got any domain for your Ant Media Server, you can get free domain in Freenom.
+	SSL for both of Website & Ant Media Server
+
+Firstly, you need Ant Media Server Enterprise Edition in this solution. Also, you need SSL in your Website & Ant Media Server. Because of Google Chrome Security rules. If you haven't got any domain for your Ant Media Server, you can get a free domain in Freenom.
 
  
 Step 1. Prepare the Ant Media Server
@@ -29,7 +28,10 @@ If everything is OK, then we skip to the next step.
 
 Step 2. Prepare the HTML Page 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-In this section you need some css & js in HTML pages. 
+In this section you need some CSS & JS in HTML pages. 
+
+   .. figure:: https://antmedia.io/wp-content/uploads/2019/11/antmedia-conference-room.jpg
+      :alt: Ant Media Conference Room
 
 Include JavaScript files to your page in the header as follows.
 
@@ -42,10 +44,11 @@ Include JavaScript files to your page in the header as follows.
 	...
 	</head>
 
-Include Body some tags to your page in the body as follows.
+Include Codes to your page in the body as follows.
 
 .. code-block:: java
 
+	<body>
 	...
 	<div class="jumbotron">
 	<div id="players">
@@ -69,12 +72,14 @@ Include Body some tags to your page in the body as follows.
 	</div>
 	</div>
 	...
+	</body>
 
 
-Include footer some codes to your page in the body as follows.
+Include Codes to your page in the script as follows.
 
 .. code-block:: java
 
+	<script>
 	...
 	Define Media source variable, SDP variable and etc. 
 
@@ -85,6 +90,7 @@ Include footer some codes to your page in the body as follows.
 
 	}
 	...
+	</script>
 
 
 You can analyze and follow the `Conference Example <https://antmedia.io/livedemo/conference.html>`_ in the Live Demo also.
@@ -94,19 +100,18 @@ We hope this tutorial will give an idea about WebRTC conference applications. Yo
 How to Create Own WebRTC Peer to Peer Communication
 --------------------------------
 
-At the end of this tutorial, you have basic WebRTC Peer to Peer Communication. This tutorial scope is basics in WebRTC Peer to Peer Communication. For the detailed technical information follow this `link <https://antmedia.io/how-to-create-webrtc-peer-to-peer-communication/>`_.
+At the end of this tutorial, you will learn how to create basic WebRTC Peer to Peer Communication. This tutorial scope is basics in WebRTC Peer to Peer Communication. For the detailed technical information follow this `link <https://antmedia.io/how-to-create-webrtc-peer-to-peer-communication/>`_.
 
 You need some requirements in build Peer to Peer Communication. Requirements in listed in below.
 
 .. tip::
-
-	Requeirements
+	Requeirements:
 
 	-Ant Media Server Enterprise Edition
 
-	-SSL both of Website & Ant Media Server
+	-SSL for both of Website & Ant Media Server
 
-Firstly, you need Ant Media Server Enterprise Edition in this solution. Also, you need SSL in your Website & Ant Media Server. Because of Google Chrome Security rules. If you haven't got any domain for your Ant Media Server, you can get free domain in Freenom.
+Firstly, you need Ant Media Server Enterprise Edition in this solution. Also, you need SSL in your Website & Ant Media Server. Because of Google Chrome Security rules. If you haven't got any domain for your Ant Media Server, you can get a free domain in Freenom.
 
  
 Step 1. Prepare the Ant Media Server
@@ -118,7 +123,10 @@ If everything is OK, then we skip to the next step.
 
 Step 2. Prepare the HTML Page 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-In this section you need some css & js in HTML pages. 
+In this section you need some CSS & JS in HTML pages. 
+
+   .. figure:: https://antmedia.io/wp-content/uploads/2019/11/antmedia-peer-to-peer.jpg
+      :alt: Ant Media Peer to Peer Communication
 
 Include JavaScript files to your page in the header as follows.
 
@@ -131,10 +139,11 @@ Include JavaScript files to your page in the header as follows.
 	...
 	</head>
 
-Include Body some codes to your page in the body as follows.
+Include Codes to your page in the body as follows.
 
 .. code-block:: java
 
+	<body>
 	...
 	<video id="localVideo" autoplay muted width="480"></video>
 	<video id="remoteVideo" autoplay controls width="480"></video>
@@ -153,11 +162,13 @@ Include Body some codes to your page in the body as follows.
 	<button onclick="unmuteLocalMic()" class="btn btn-default"  >Unmute Local Mic</button>	
 	</div>
 	...
+	</body>
 
-Include footer some codes to your page in the body as follows.
+Include Codes to your page in the script as follows.
 
 .. code-block:: java
 
+	<script>
 	...
 	Define Media Source variable, SDP variable and etc. 
 	
@@ -168,7 +179,7 @@ Include footer some codes to your page in the body as follows.
 	
 	}
 	...
-
+	</script>
 
 You can analyze and follow the `Peer to Peer Example <https://antmedia.io/livedemo/peer.html>`_ in the Live Demo also.
 
