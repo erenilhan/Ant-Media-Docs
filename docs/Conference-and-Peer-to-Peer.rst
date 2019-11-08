@@ -1,6 +1,6 @@
-General Steps How to Create Own WebRTC Conference Room and Peer to Peer
+General Steps How to Create Own WebRTC Conference Room and Peer to Peer Communication
 ---------------------------
-This guide describes How to Create Own WebRTC Conference Room and Peer to Peer with Ant Media Server. This guide you can use WebRTC solutions in different communication formations. In addition to peer-to-peer (1-1)  and publish-play (1-N) communication types, you can also implement a WebRTC conference (N-N) solution with Ant Media Server Javascript SDK. Let’s have a look at that step by step. 
+This guide describes How to Create Own WebRTC Conference Room and Peer to Peer Communication with Ant Media Server. This guide you can use WebRTC solutions in different communication formations. In addition to peer-to-peer (1-1) and publish-play (1-N) communication types, you can also implement a WebRTC conference (N-N) solution with Ant Media Server Javascript SDK. Let’s have a look at that step by step. 
 
 How to Create Own WebRTC Conference Room
 --------------------------------
@@ -18,15 +18,9 @@ You need some requirements in build Conference Room. Requirements in listed in b
 
 Firstly, you need Ant Media Server Enterprise Edition in this solution. Also, you need SSL in your Website & Ant Media Server. Because of Google Chrome Security rules. If you haven't got any domain for your Ant Media Server, you can get a free domain in Freenom.
 
- 
-Step 1. Prepare the Ant Media Server
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-We recommended for Ant Media Server in Ubuntu 16.04. Ant Media Server installation is easy and basic. You can install Ant Media Server in follow `this <https://github.com/ant-media/Ant-Media-Server/wiki/Getting-Started/>`_. tutorial. Also, you need SSL for the Ant Media Server. So, you have to need domain for your Ant Media Server.
-
 If everything is OK, then we skip to the next step.
 
-Step 2. Prepare the HTML Page 
+Prepare the HTML Page 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 In this section you need some CSS & JS in HTML pages. 
 
@@ -93,7 +87,7 @@ Include Codes to your page in the script as follows.
 	</script>
 
 
-You can analyze and follow the `Conference Example <https://antmedia.io/livedemo/conference.html>`_ in the Live Demo also.
+You can analyze and follow the `Conference Example <https://github.com/ant-media/StreamApp/blob/master/src/main/webapp/conference.html>`_ in the Github also.
 
 We hope this tutorial will give an idea about WebRTC conference applications. You can analyze the example at the `Test Server <https://test.antmedia.io:5443/WebRTCAppEE/conference.html>`_. If you have a question, please let us know through contact@antmedia.io
 
@@ -113,15 +107,9 @@ You need some requirements in build Peer to Peer Communication. Requirements in 
 
 Firstly, you need Ant Media Server Enterprise Edition in this solution. Also, you need SSL in your Website & Ant Media Server. Because of Google Chrome Security rules. If you haven't got any domain for your Ant Media Server, you can get a free domain in Freenom.
 
- 
-Step 1. Prepare the Ant Media Server
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-We recommended for Ant Media Server in Ubuntu 16.04. Ant Media Server installation is easy and basic. You can install Ant Media Server in follow `this <https://github.com/ant-media/Ant-Media-Server/wiki/Getting-Started/>`_. tutorial. Also, you need SSL for the Ant Media Server. So, you have to need domain for your Ant Media Server.
-
 If everything is OK, then we skip to the next step.
 
-Step 2. Prepare the HTML Page 
+Prepare the HTML Page 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 In this section you need some CSS & JS in HTML pages. 
 
@@ -181,6 +169,6 @@ Include Codes to your page in the script as follows.
 	...
 	</script>
 
-You can analyze and follow the `Peer to Peer Example <https://antmedia.io/livedemo/peer.html>`_ in the Live Demo also.
+You can analyze and follow the `Peer to Peer Example <https://github.com/ant-media/StreamApp/blob/master/src/main/webapp/peer.html>`_ in the Github also.
 
-We hope this tutorial will give an idea about WebRTC conference applications. You can analyze the example at the `Test Server <https://test.antmedia.io:5443/WebRTCAppEE/peer.html>`_. If you have a question, please let us know through contact@antmedia.io
+We hope this tutorial will give an idea about WebRTC Peer to Peer applications. You can analyze the example at the `Test Server <https://test.antmedia.io:5443/WebRTCAppEE/peer.html>`_. If you have a question, please let us know through contact@antmedia.io
