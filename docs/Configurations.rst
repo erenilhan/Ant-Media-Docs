@@ -65,7 +65,7 @@ The table below summarises the available settings. Some settings don't have to b
 +---------------------------------------------+----------------------------------------------------------------------------------+
 | youtube.clientSecret                        | Secret key for the client id above.                                              |
 +---------------------------------------------+----------------------------------------------------------------------------------+
-|				*https://antmedia.io/how-to-broadcast-facebook-periscope-youtube-simultaneously/*                |
+|				*https://antmedia.io/how-to-broadcast-facebook-periscope-youtube-simultaneously/*                                |
 +---------------------------------------------+----------------------------------------------------------------------------------+
 | settings.vodFolder                          | Determines the directory to store VOD files.                                     |
 +---------------------------------------------+----------------------------------------------------------------------------------+
@@ -77,8 +77,8 @@ The table below summarises the available settings. Some settings don't have to b
 +---------------------------------------------+----------------------------------------------------------------------------------+
 | settings.objectDetectionEnabled *(false)*   | If it is set true then object detection algorithm is run for streaming video.    |
 +---------------------------------------------+----------------------------------------------------------------------------------+
-| settings.createPreviewPeriod *(5000)*       | This determines the period (milliseconds) of preview (png) file creation. This file is created  | 
-|                                             | into <APP_DIR>/preview directory.                                                |
+| settings.createPreviewPeriod *(5000)*       | This determines the period (milliseconds) of preview (png) file creation. This   | 
+|                                             | file is created into <APP_DIR>/preview directory.                                |
 +---------------------------------------------+----------------------------------------------------------------------------------+
 | settings.previewHeight *(480)*              | Determines the hight of preview file.                                            |
 +---------------------------------------------+----------------------------------------------------------------------------------+
@@ -119,13 +119,13 @@ The table below summarises the available settings. Some settings don't have to b
 +---------------------------------------------+----------------------------------------------------------------------------------+
 | settings.remoteAllowedCIDR                  | Allowed IP addresses to reach REST API. It must be in CIDR format as a.b.c.d/x   |
 +---------------------------------------------+----------------------------------------------------------------------------------+
-| *db.app.name                                | Application name such as LiveApp, WebRTCApp etc.                                 |
+| db.app.name                                 | Application name such as LiveApp, WebRTCApp etc.                                 |
 +---------------------------------------------+----------------------------------------------------------------------------------+
-| *db.name                                    | Database name for the application.                                               |
+| db.name                                     | Database name for the application.                                               |
 +---------------------------------------------+----------------------------------------------------------------------------------+
-| *db.type                                    | Can be mongodb or mapdb                                                          |
+| db.type                                     | Can be mongodb or mapdb                                                          |
 +---------------------------------------------+----------------------------------------------------------------------------------+
-| *db.host                                    | Meaningful for MongoDB. It is the host address of MongoDB as `<mongo_host>:27017`|
+| db.host                                     | Meaningful for MongoDB. It is the host address of MongoDB as `<mongo_host>:27017`|
 |                                             | or Mongo Replica Set as `<mongo_host>:27017/?replicaSet=<replication_name>`      |
 +---------------------------------------------+----------------------------------------------------------------------------------+
 | db.user                                     | MongoDB user name. Left as blank if no user credentials.                         |
