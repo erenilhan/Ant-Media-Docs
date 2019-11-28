@@ -20,7 +20,7 @@ Directory Structure
 
 ::
 
-   /usr/local/test
+   /home/antmedia/test
    |-- webrtctest
    |   |-- run.sh
    |   |-- lib
